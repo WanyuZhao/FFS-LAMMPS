@@ -1,0 +1,14 @@
+units metal
+dimension 3
+boundary p p p
+read_data ./in.data
+pair_style sw
+pair_coeff * * ./Si.sw Si
+run_style verlet
+timestep 0.005
+
+compute iceId all diamondlambda/atom degree 6 nnn 4 cutoff 3.2 cutoff_big 3.2 nucleiBiggest self greaterThan 0.5
+compute lambda all biggest c_iceId groupBig biggestcluster
+
+fix noseHoover all npt temp 220 220 1 iso 0 0 5 fixedpoint 0 0 0
+
