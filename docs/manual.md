@@ -4,11 +4,11 @@ This document provides a complete overview of input files preparation, LAMMPS co
 
 ---
 
-I.  Input Files Setup
+##  Input Files Setup
 
 Create a folder 'foldername'/ containing the following files to run FFS simulation:
 
-
+```
 'foldername'/
 ├── in.data              # Initial configuration of the liquid system
 ├── lammps.input         # Standard LAMMPS MD settings
@@ -17,9 +17,9 @@ Create a folder 'foldername'/ containing the following files to run FFS simulati
 ├── trajectory.in.txt    # empty initial file; used by FFS to track progress
 ├── pool/                # empty folder; output configuration `.xyz` files will be automatically generated here
 └── run_lammps.sh        # Job submission script to run FFS on HPC cluster
+```
 
-
-a) ffs.input
+###  ffs.input
 
 This file contains FFS parameters. Below is an example and description for each parameter (!!!!):
 
@@ -38,11 +38,11 @@ lambda 10 40 60 80 100 120 145 170 200 230 260 300
 ```
 
 
-b) lammps.input
+### lammps.input
 
 Below is a description of the usage, syntax, arguments, and examples for the compute command:
 
-1.  compute diamondlambda/atom
+####  compute diamondlambda/atom
 
 This compute identifies the crystalline-like molecules by employing the local order parameter, and then determines clusters consisted with crystalline-like molecules.  
 This compute returns tag ID of each identified cluster which will be used in compute biggest command.
@@ -72,7 +72,7 @@ compute graphiteId graphite diamondlambda/atom degree 3 nnn 3 cutoff 1.8 orderPa
 
 
 
-2.  compute biggest
+####  compute biggest
 
 This compute identifies the biggest crystalline-like cluster and return its atoms number.
 
@@ -93,7 +93,7 @@ compute lambda water biggest c_iceId groupBig biggestcluster
 
 ---
 
-III. Running the Simulation
+## Running the Simulation
 
 
 mpirun -np 512 ./lmp_mpi -in lammps.input -screen none -ffs 128 ffs.input
@@ -104,9 +104,9 @@ mpirun -np 512 ./lmp_mpi -in lammps.input -screen none -ffs 128 ffs.input
 ---
 
 
-IV. Output Files
+## Output Files
 
-a) trajectory.out.txt
+### trajectory.out.txt
 
 Each line corresponds to a successful trial that reaches the next interface.
 
@@ -128,7 +128,7 @@ Fields:
 7. `xyz.1__49_0`: Name of child configuration (interface = 1, shooting index = 49, 0 = sequence number of the successful trial resulting from shooting 49)
 
 
-b) slurm-xxxx.out
+### slurm-xxxx.out
 
 This file includes:
 - Status printouts during `check_every` and `print_every`
@@ -174,7 +174,7 @@ These confirm communication between universes and the world leader.
 
 ---
 
-V. Postprocessing
+## Postprocessing
 
 Use the included Python script in `examples/` to compute the nucleation rate:
 ```
