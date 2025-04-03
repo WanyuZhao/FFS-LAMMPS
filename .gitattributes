@@ -1,5 +1,8 @@
+# Source code should be counted
 *.cpp linguist-detectable=true
-*.h   linguist-detectable=true
-*.md  linguist-documentation
-*.roff linguist-documentation
-*.1    linguist-documentation
+*.h linguist-detectable=true
+
+# Ignore documentation files in language stats
+*.md linguist-documentation
+*.1 linguist-documentation
+*.man linguist-documentation
