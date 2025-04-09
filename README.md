@@ -33,6 +33,19 @@ See docs/custom_lammps_patch.md for full patch details.
 
 ---
 
+## Examples
+
+This repository contains two example systems located in the `examples/` directory:
+
+- `examples/mW/` – corse-grained mW water system 
+- `examples/NEP/` – Carbon system with NEP potential (diamond or graphite nucleation)
+
+Each example includes:
+- An `input/` folder containing the LAMMPS input files
+- A corresponding `output.zip` archive containing the simulation output
+
+---
+
 ## License
 
 This code is under the terms of the GNU General Public License (GPL)(https://www.gnu.org/licenses/gpl-3.0.html), consistent with the licensing of the LAMMPS codebase, from which it is derived.

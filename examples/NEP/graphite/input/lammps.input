@@ -1,0 +1,19 @@
+units metal
+dimension 3
+boundary p p p
+atom_style atomic
+read_data LiquidC.data
+
+pair_style nep C_2022_NEP3.txt
+pair_coeff * *
+
+mass            1 12.0100
+run_style verlet
+timestep 0.002
+
+compute iceId all diamondlambda/atom degree 3 nnn 3 cutoff 1.8 cutoff_big 3.5 nucleiBiggest self lessThan -0.85
+compute lambda all biggest c_iceId  groupBig biggest
+
+ 
+fix noseHoover all npt temp 3700 3700 1 iso 150000 150000 100 tchain 5 pchain 5 mtk yes
+

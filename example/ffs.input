@@ -1,7 +1,0 @@
-equilibrium 100000
-check_every 20
-print_every 50
-water_group all
-temperature 220
-config_each_lambda 120 120 120 120 120 120 120 120 120 120 120 120 120 120 120  
-lambda 11 40 60 80 100 120 145 170 200 230 260 300 350 400 450 500

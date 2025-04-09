@@ -753,7 +753,7 @@ int ffs_main(int argc, char **argv) {
     FfsTrajectoryReader continuedTrajectory;
     FfsTrajectoryWriter fileTrajectory;
     //get the value of the specific parameter
-    int temperatureMean=ffsPar ams->getInt("temperature");
+    int temperatureMean=ffsParams->getInt("temperature");
     const std::string waterGroupName = ffsParams->getString("water_group");
     int equilibriumSteps=ffsParams->getInt("equilibrium");
     int print_every = ffsParams->getInt("print_every");

@@ -21,7 +21,7 @@ Create a folder 'foldername'/ containing the following files to run FFS simulati
 
 ###  ffs.input
 
-This file contains FFS parameters. Below is an example and description for each parameter (!!!!):
+This file contains FFS parameters. Below is an example and description for each parameter:
 
 ```
 equilibrium 100000        # Equilibrium steps before FFS begins
@@ -176,7 +176,7 @@ These confirm communication between universes and the world leader.
 
 ## Postprocessing
 
-Use the included Python script in `examples/` to compute the nucleation rate:
+Use the included Python script in `examples/mW/script` to compute the nucleation rate:
 ```
 python NucleationRate.py --datafile in.data --logfile slurm-xxxx.out
 ```
