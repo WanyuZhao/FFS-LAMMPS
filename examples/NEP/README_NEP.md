@@ -82,7 +82,10 @@ Each example folder contains an `input/` subdirectory with:
 - `run_lammps.sh` – Job submission script
 
 
-Simulation outputs (e.g., FFS log files, configurations) are available in the associated `.zip` archives.
+You can download the FFS output(e.g., FFS log files, configurations) for carbon crystallization here:
+
+➡️ (https://github.com/WanyuZhao/FFS-LAMMPS/releases/tag/carbon_NEP_FFS_output)
+
 
 Refer to `docs/manual.md` for more information about FFS setup and analysis.
 
