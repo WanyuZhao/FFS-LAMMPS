@@ -19,7 +19,7 @@ This is due to interface changes in `pair_style nep` in recent LAMMPS versions.
 
 ---
 
-## NEP Code Source and Patch Notes
+## NEP Source Code and Patch Notes
 
 The NEP implementation is originally from:
 
@@ -66,7 +66,7 @@ make mpi
 ```
 
 
-## Examples in This Folder
+## Examples in the Folder
 
 
 - Diamond Nucleation @ 3900 K, 15 GPa
