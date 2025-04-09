@@ -23,7 +23,7 @@ This is due to interface changes in `pair_style nep` in recent LAMMPS versions.
 
 The NEP implementation is originally from:
 
-> https://github.com/brucefan1983/NEP_CPU/tree/main
+https://github.com/brucefan1983/NEP_CPU/tree/main
 
 To make it compatible with LAMMPS 2017, we applied the following patch to `pair_NEP.cpp:
 
@@ -84,7 +84,7 @@ Each example folder contains an `input/` subdirectory with:
 
 You can download the FFS output(e.g., FFS log files, configurations) for carbon crystallization here:
 
-➡️ (https://github.com/WanyuZhao/FFS-LAMMPS/releases/tag/carbon_NEP_FFS_output)
+https://github.com/WanyuZhao/FFS-LAMMPS/releases/tag/carbon_NEP_FFS_output
 
 
 Refer to `docs/manual.md` for more information about FFS setup and analysis.
