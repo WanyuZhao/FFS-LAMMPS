@@ -42,7 +42,7 @@ This repository contains two example systems located in the `examples/` director
 
 Each example includes:
 - An `input/` folder containing the LAMMPS input files
-- A corresponding `output.zip` archive containing the simulation output
+- A corresponding `output.zip` archive containing the FFS output
 
 ---
 
