@@ -128,7 +128,7 @@ Fields:
 7. `xyz.1__49_0`: Name of child configuration (interface = 1, shooting index = 49, 0 = sequence number of the successful trial resulting from shooting 49)
 
 
-### slurm-xxxx.out
+### xxxx.out
 
 This file includes:
 - Status printouts during `check_every` and `print_every`
