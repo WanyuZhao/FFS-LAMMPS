@@ -37,12 +37,14 @@ See docs/custom_lammps_patch.md for full patch details.
 
 This repository contains two example systems located in the `examples/` directory:
 
-- `examples/mW/` – corse-grained mW water system 
-- `examples/NEP/` – Carbon system with NEP potential (diamond or graphite nucleation)
+- **examples/mW/**: coarse-grained mW water system  
+  - `input/` — LAMMPS input files  
+  - `output.zip` — FFS simulation outputs
+  
+- **examples/NEP/**: carbon system with NEP potential (diamond or graphite nucleation)  
+  - LAMMPS input files are provided in the `examples/NEP/graphite/` and `examples/NEP/diamond/` folders  
+  - FFS outputs can be downloaded from the [carbon_NEP_FFS_output release](https://github.com/WanyuZhao/FFS-LAMMPS/releases/tag/carbon_NEP_FFS_output)    
 
-Each example includes:
-- An `input/` folder containing the LAMMPS input files
-- A corresponding `output.zip` archive containing the FFS output
 
 ---
 
