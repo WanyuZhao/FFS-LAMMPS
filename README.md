@@ -48,21 +48,13 @@ Each example includes:
 
 ## License
 
-This code is under the terms of the GNU General Public License (GPL)(https://www.gnu.org/licenses/gpl-3.0.html), consistent with the licensing of the LAMMPS codebase, from which it is derived.
 
-It includes modified versions of core LAMMPS files (`main.cpp`, `lammps.cpp`), and must therefore remain GPL-compliant.
+This package (including all patches to LAMMPS core files such as `main.cpp` and `lammps.cpp`, documentation, and original workflow figures) is licensed under the GNU General Public License version 2.0 (GPL-2.0). See the LICENSE file for full details.
 
----
+This is consistent with the licensing of the LAMMPS codebase from which it is derived.
 
-## Image License
- 
-Workflow figure in this repository (e.g., `docs/workflow.png`) is original creation by the authors.
-
-They are released under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
-
-You are free to use these images in academic papers or presentations, provided appropriate attribution is given  
-(e.g., "© 2025 Zhaowanyu, CC BY 4.0").
 
 ---
+
 
 
