@@ -1,0 +1,2 @@
+Diamond (3700 K, 15 GPa): 8 h wall-time on 512 CPUs using the example input  
+Graphite (3700 K, 15 GPa): 4 h wall-time on 512 CPUs using the example input
