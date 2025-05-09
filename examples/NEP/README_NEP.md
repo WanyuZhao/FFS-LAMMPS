@@ -69,17 +69,18 @@ make mpi
 ## Examples in the Folder
 
 
-- Diamond Nucleation @ 3900 K, 15 GPa
+- Diamond Nucleation @ 3700 K, 15 GPa
 - Graphite Nucleation @ 3700 K, 15 GPa
 
-Each example folder contains an `input/` subdirectory with:
+Each example directory contains:
 - `lammps.input` – LAMMPS input settings
 - `ffs.input` – FFS parameters
 - `trajectory.in.txt` – empty initial file
-- `LiquidC.data` – Liquid carbon configuration
+- `LiquidC.data` – liquid carbon configuration
 - `C_2022_NEP3.txt` – NEP potential file
-- `pool/` – empty folder
-- `run_lammps.sh` – Job submission script
+- `pool/` – stores generated `.xyz` files
+- `run_lammps.sh` – job submission script
+
 
 
 You can download the FFS output(e.g., FFS log files, configurations) for carbon crystallization here:
@@ -88,6 +89,15 @@ https://github.com/WanyuZhao/FFS-LAMMPS/releases/tag/carbon_NEP_FFS_output
 
 
 Refer to `docs/manual.md` for more information about FFS setup and analysis.
+
+## Reproduction Instruction
+
+Once LAMMPS is compiled with `USER-NEP`, run the FFS simulations for either graphite or diamond:
+
+```bash
+cd examples/NEP/{graphite,diamond}
+bash run_lammps.sh
+```
 
 ---
 
